@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="css/styles.css" as="style">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Freelancer</title>
   </head>
   <body>
@@ -13,46 +21,57 @@
       <h1>Carlos Mauricio <span class="titulo">Freelancer</span></h1>
     </header>
 
-    <nav>
-      <a href="#">Inicio</a>
-      <a href="#">Sobre Mí</a>
-      <a href="#">Clientes</a>
-      <a href="#">Contacto</a>
-    </nav>
+    <div class="nav-bg">
+      <nav class="navegacion-principal contenedor">
+        <a href="#">Inicio</a>
+        <a href="#">Sobre Mí</a>
+        <a href="#">Clientes</a>
+        <a href="#">Contacto</a>
+      </nav>
+    </div>
 
-    <section>
-      <h2>Diseño y Desarrollo Web</h2>
+    
 
-      <p>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="icon icon-tabler icon-tabler-map-pin"
-          width="88"
-          height="88"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="#ffc107"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <circle cx="12" cy="11" r="3" />
-          <path
-            d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
-          />
-        </svg>
-      </p>
+    <section class="hero">
+      <div class="contenido-hero">
+        <h2 class="titulo">Diseño y Desarrollo Web <span>Freelancer</span></h2>
 
-      <p>San Juan De Los Lagos, Jalisco</p>
-      <a href="#">Contactar</a>
-    </section>
+      <div class="ubicacion">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-map-pin"
+            width="88"
+            height="88"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffc107"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="11" r="3" />
+            <path
+              d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+            />
+          </svg>
+      
+  
+        <p>San Juan De Los Lagos, Jalisco</p>
+      </div>
 
-    <main></main>
+        <a href="" class="boton">Contactar</a>
+      </section>
+      </div>
+     
+
+    <main class="contenedor sombra">
     <h2>Mis Servicios</h2>
-
-    <section>
+      <div class="servicios">
+    <section class="servicio">
       <h3>Diseño Web</h3>
+
+      <div class="iconos">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-palette"
@@ -73,14 +92,16 @@
         <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
         <circle cx="16.5" cy="10.5" r=".5" fill="currentColor" />
       </svg>
+    </div>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
         harum labore.
       </p>
     </section>
 
-    <section>
+    <section class="servicio">
       <h3>Aplicaciones Web</h3>
+      <div class="iconos">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-brand-android"
@@ -123,15 +144,16 @@
         />
         <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" />
       </svg>
+    </div>
 
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, odio!
       </p>
     </section>
 
-    <section>
+    <section class="servicio">
       <h3>E-comerce</h3>
-
+      <div class="iconos">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-credit-card"
@@ -151,42 +173,48 @@
         <line x1="11" y1="15" x2="13" y2="15" />
       </svg>
 
+    </div>
+
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. A harum aliquid
         blanditiis nam ipsum veniam obcaecati distinctio illum perspiciatis
         similique modi
       </p>
     </section>
+  </div>
 
-    <section>
-      <h2>Contacto</h2>
 
-      <form action="">
-        <fieldset>
-          <legend>Contactanos llenando todos los campos</legend>
+  <section>
+    <h2>Contacto</h2>
 
-          <div>
-            <label for="">Nombre</label>
-            <input type="text" placeholder="Nombre" />
-          </div>
-          <div>
-            <label for="">Teléfono</label>
-            <input type="tel" placeholder="Teléfono" />
-          </div>
-          <div>
-            <label for="">Correo</label>
-            <input type="email" placeholder="Correo" />
-          </div>
-          <div>
-            <label for="">Mensaje</label>
-            <textarea name="" id="" cols="30" rows="10"> </textarea>
-          </div>
-          <div>
-            <input type="submit" name="" id="" />
-          </div>
-        </fieldset>
-      </form>
-    </section>
+    <form action="">
+      <fieldset>
+        <legend>Contactanos llenando todos los campos</legend>
+
+        <div>
+          <label for="">Nombre</label>
+          <input type="text" placeholder="Nombre" />
+        </div>
+        <div>
+          <label for="">Teléfono</label>
+          <input type="tel" placeholder="Teléfono" />
+        </div>
+        <div>
+          <label for="">Correo</label>
+          <input type="email" placeholder="Correo" />
+        </div>
+        <div>
+          <label for="">Mensaje</label>
+          <textarea name="" id="" cols="30" rows="10"> </textarea>
+        </div>
+        <div>
+          <input type="submit" name="" id="" />
+        </div>
+      </fieldset>
+    </form>
+  </section>
+
+</main>
 
     <footer>
       <p>Todos los derechos reservados. Carlos Mauricio Hernández Rosales</p>
