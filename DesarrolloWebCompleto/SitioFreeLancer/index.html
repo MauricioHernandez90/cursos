@@ -66,7 +66,7 @@
      
 
     <main class="contenedor sombra">
-    <h2>Mis Servicios</h2>
+    <h2 id="servicios">Mis Servicios</h2>
       <div class="servicios">
     <section class="servicio">
       <h3>Diseño Web</h3>
@@ -100,7 +100,7 @@
     </section>
 
     <section class="servicio">
-      <h3>Aplicaciones Web</h3>
+      <h3 id="aplicaciones-web">Aplicaciones Web</h3>
       <div class="iconos">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +152,7 @@
     </section>
 
     <section class="servicio">
-      <h3>E-comerce</h3>
+      <h3 id="e-comerce">E-comerce</h3>
       <div class="iconos">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -185,39 +185,49 @@
 
 
   <section>
-    <h2>Contacto</h2>
+    <h2 id="contacto">Contacto</h2>
 
-    <form action="">
+    <form class="formulario" action="">
       <fieldset>
         <legend>Contactanos llenando todos los campos</legend>
 
-        <div>
+
+        <div class="contenedor-campos">
+
+        
+        <div class="campo">
           <label for="">Nombre</label>
-          <input type="text" placeholder="Nombre" />
+          <input class="input-text"  type="text" placeholder="Nombre" />
         </div>
-        <div>
+        <div class="campo">
           <label for="">Teléfono</label>
-          <input type="tel" placeholder="Teléfono" />
+          <input class="input-text" type="tel" placeholder="Teléfono" />
         </div>
-        <div>
+        <div class="campo">
           <label for="">Correo</label>
-          <input type="email" placeholder="Correo" />
+          <input class="input-text" type="email" placeholder="Correo" />
         </div>
-        <div>
+        <div class="campo">
           <label for="">Mensaje</label>
-          <textarea name="" id="" cols="30" rows="10"> </textarea>
+          <textarea class="input-text" name="" id="" cols="30" rows="7"> </textarea>
         </div>
-        <div>
-          <input type="submit" name="" id="" />
+
+      </div>
+
+
+        <div class="enviar">
+          <input class="boton" type="submit" name="" id="" />
         </div>
+
+     
       </fieldset>
     </form>
   </section>
 
 </main>
 
-    <footer>
-      <p>Todos los derechos reservados. Carlos Mauricio Hernández Rosales</p>
+    <footer class="footer">
+            <p>Todos los derechos reservados. Carlos Mauricio Hernández Rosales</p>
     </footer>
   </body>
 </html>
